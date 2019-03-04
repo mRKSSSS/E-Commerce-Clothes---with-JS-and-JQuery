@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<title>SH Clothes E-Commerce</title>
+	<!--Generic meta-->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, initial-scale = 1.0, shrink-to-fit=no">
+	<meta name="author" content="Diogo Marques" />
+	<meta name="description" content="E-Commerce Front-End Project Site - EDIT" />
+	<meta name="keywords" content="sh, e-commerce, clothes, t-shirts, outerwear, jackets, coats, buy, shop, collection" />
+	<meta name="robots" content="index, follow">
+	<!--extra meta-->
+	<meta name="google" content="notranslate" />
+	<!--fb meta-->
+	<meta property="og:title" content="SH Clothes E-Commerce" />
+	<meta property="og:url" content="http://www.shclothes.com" />
+	<meta property="og:description" content="E-Commerce Front-End Project Site - EDIT" />
+	<meta property="og:site_name" content="SH Clothes E-Commerce" />
+	<meta property="og:image" content="images/system/SH_icon.png" />
+	<meta property="og:locale" content="pt_PT" />
+	<meta property="og:type" content="website" />
+	<!--twitter meta-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="http://www.shclothes.com">
+	<meta name="twitter:title" content="SH Clothes E-Commerce">
+	<meta namgulpe="twitter:description" content="E-Commerce Front-End Project Site - EDIT">
+	<meta name="twitter:image" content="images/system/SH_icon.png">
+	<!--Add to home screen icon-->
+	<link href="images/system/apple-touch-icon.png" rel="apple-touch-icon" />
+	<link href="images/system/apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes="76x76" />
+	<link href="images/system/apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes="120x120" />
+	<link href="images/system/apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes="152x152" />
+	<link href="images/system/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180" />
+	<!--favicon-->
+	<link rel="shortcut icon" href="images/system/favicon.ico" />
+	<link rel="icon" type="image/ico" href="images/system/favicon.ico" />
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+	<!--Links-->
+    <link rel="stylesheet" href="lightbox2-master/src/css/lightbox.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<!--GA-->
+
+<script>
+	(function(i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r;
+		i[r] = i[r] || function() {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date();
+		a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0];
+		a.async = 1;
+		a.src = g;
+		m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-XXXXXXXX-X', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<body>
+
+	<!-- Start Preloader -->
+	<div id="preloader"></div>
+	<!-- End Preloader -->
+	
+	<!-- Start Nav -->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="#">SH</a>
+			</div>
+			<nav class="primary-nav" id="primary-nav">
+				<ul>
+					<li><a href="#">Woman</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Kids</a></li>
+					<li><a href="#">Comming Soon</a></li>
+					<li><a href="#">About</a></li>
+					<li class="mobile-options">
+						<a href="#">
+							<i class="icon-user"></i>Log In
+						</a>
+					</li>
+					<li class="mobile-options">
+						<a href="#">
+							<i class="icon-cart"></i>Basket <span>(0)</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="secondary-nav">
+				<ul>
+					<li class="desktop-options" id="login">
+						<a href="#" id="loginLink">
+							<i class="icon-user"></i>
+							<span id="hidable">Log In</span>
+						</a>
+					</li>
+					<li class="desktop-options" id="shopCart">
+						<a href="#" id="shopCartLink">
+							<i class="icon-cart"></i>
+							<span id="hidable">Basket</span>
+							<span>(2)</span>
+						</a>
+					</li>
+					<li class="search-field">
+						<input id="search" type="search" name="search" placeholder="Search something...">
+					</li>
+					<li class="search-button">
+						<i class="icon-search"></i>
+					</li>
+				</ul>
+			</nav>
+			<div class="hamburger-menu">
+				<i class="icon-menu"></i>
+				<i class="icon-cross"></i>
+			</div>
+
+			<!-- Mini dropdown shopping cart -->
+			<div class="mini-shopping-cart dropdownMenu">
+				<!-- Start Container -->
+				<div class="shop-container" id="table-container2">
+					<!-- Start Table Normal Row -->
+					<div class="table-row deletable">
+						<div class="cell row-cell">
+							<img src="images/minicart/minicart-floral-1.jpg">
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<h2><a href="#">Floral Plimsol</a></h2>
+							</div>
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<p>€<span class="amount2">99.95</span></p>
+							</div>
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<i class="icon-cross"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Table Normal Row -->
+					<!-- Start Table Normal Row -->
+					<div class="table-row deletable">
+						<div class="cell row-cell">
+							<img src="images/minicart/minicart-trousers-1.jpg">
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<h2><a href="#">Coated 5 pocket trousers</a></h2>
+							</div>
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<p>€<span class="amount2">99.95</span></p>
+							</div>
+						</div>
+						<div class="cell row-cell">
+							<div class="center">
+								<i class="icon-cross"></i>
+							</div>
+						</div>
+					</div>
+					<!-- End Table Normal Row -->
+					<div class="cart-summary">
+						<div class="subtotal">
+							<p>Subtotal:</p>
+							<p>€<span id="subtotal2">567.95</span></p>
+						</div>
+						<a href="#">Checkout</a>
+					</div>
+				</div>
+				<!-- End Container -->
+			</div>
+
+			<!-- Start Login -->
+			<div class="loginMenu dropdownMenu">
+				<form>
+					<input id="username" type="text" name="username" placeholder="Username" required>
+					<input id="password" type="password" name="password" placeholder="Password" required>
+					<input id="submit" type="submit" value="Log In">
+					<p>Don't have an account? <a href="#">Sign Up</a></p>
+				</form>
+			</div>
+			<!-- End Login -->
+
+		</div>
+	</header>
+	<!-- End Nav -->
+
+	<!-- Start Breadcrumbs -->
+	<section class="breadcrumbs">
+		<div class="container">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Men</a></li>
+				<li><a href="#">Shoes</a></li>
+				<li>Floral Plimsoll</li>
+			</ul>
+		</div>
+	</section>
+	<!-- End Breadcrumbs -->
+
+	<!-- Start Showroom -->
+	<section class="showroom">
+		<div class="container" id="displayImg" style="background-image:url('images/details/women-floral-1.jpg');">
+			<div class="side-div">
+				<a href="#">
+					<div class="side-img" style="background-image:url('images/details/women-floral-2.jpg');"></div>
+				</a>
+				<a href="#">
+					<div class="side-img" style="background-image:url('images/details/women-floral-3.jpg');"></div>
+				</a>
+				<a href="#">
+					<div class="side-img" style="background-image:url('images/details/women-floral-4.jpg');"></div>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- End Showroom -->
+
+	<!-- Start Details -->
+	<section class="details">
+		<div class="center">
+			<h1>Floral Plimsol</h1>
+			<p class="article-number">Article number: 14210160762</p>
+			<p class="price">€ 99,95</p>
+			<p class="wot">Lorem ipsum dolor sit amet consectetur adipisicing 
+				elit. Quasi, amet! Aliquam et vero porro cumque eius, 
+				quos illo atque consequuntur doloremque distinctio officiis 
+				tempora quo temporibus est maxime nisi amet.</p>
+			<h2>Size</h2>
+			<div class="sizes-block">
+				<div class="size">38</div>
+				<div class="size">39</div>
+				<div class="size clicked">40</div>
+				<div class="size">41</div>
+				<div class="size">42</div>
+			</div>
+			<a href="">Add To Cart</a>
+		</div>
+	</section>
+	<!-- End Details -->
+
+	<!-- Start Title -->
+	<section class="title">
+		<div class="container">
+			<h1>You may also like</h1>
+		</div>
+	</section>
+	<!-- End Title -->
+
+	<!-- Start Slider w/ manual slider behaviour and Lightbox2-->
+	<section class="slider">
+		<div class="container">
+			<a class="slider-before-button">&#10094;</a>
+			<ul id="carousel">
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=856" data-lightbox="slider-imgs" data-title="Slider img 1">					
+						<img src="https://picsum.photos/228/120/?image=856">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=21" data-lightbox="slider-imgs" data-title="Slider img 2">					
+						<img src="https://picsum.photos/228/120/?image=21">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=669" data-lightbox="slider-imgs" data-title="Slider img 3">					
+						<img src="https://picsum.photos/228/120/?image=669">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=660" data-lightbox="slider-imgs" data-title="Slider img 4">					
+						<img src="https://picsum.photos/228/120/?image=660">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=662" data-lightbox="slider-imgs" data-title="Slider img 5">					
+						<img src="https://picsum.photos/228/120/?image=662">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=1005" data-lightbox="slider-imgs" data-title="Slider img 6">					
+						<img src="https://picsum.photos/228/120/?image=1005">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=325" data-lightbox="slider-imgs" data-title="Slider img 7">					
+						<img src="https://picsum.photos/228/120/?image=325">
+					</a>
+				</li>
+				<li class="slide">
+					<a href="https://picsum.photos/500/500/?image=338" data-lightbox="slider-imgs" data-title="Slider img 8">					
+						<img src="https://picsum.photos/228/120/?image=338">
+					</a>
+				</li>
+			</ul>
+			<a class="slider-after-button">&#10095;</a>
+		</div>
+	</section>
+	<!-- End Slider w/ manual slider behaviour and Lightbox2-->
+
+	<!-- Start Button -->
+	<section class="button">
+		<div class="container">
+			<a href="#">Show me more related clothes</a>
+		</div>
+	</section>
+	<!-- End Button -->
+
+	<!-- Start Footer -->
+	<section class="footer">
+		<div class="container">
+			<div class="footer-block">
+				<h1>Collection</h1>
+				<ul>
+					<li><a href="#">Woman <span>(1725)</span></a></li>
+					<li><a href="#">Men <span>(635)</span></a></li>
+					<li><a href="#">Kids <span>(2514)</span></a></li>
+					<li><a href="#">Comming Soon <span>(76)</span></a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<h1>Site</h1>
+				<ul>
+					<li><a href="#">Terms of Service</a></li>
+					<li><a href="#">Privace Policy</a></li>
+					<li><a href="#">Copyright Policy</a></li>
+					<li><a href="#">Press Kit</a></li>
+					<li><a href="#">Support</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<h1>Shop</h1>
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Shipping Methods</a></li>
+					<li><a href="#">Career</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer-block">
+				<h1>Social</h1>
+				<ul>
+					<li>Shoper is made with love in Warsaw,</li>
+					<li>2014 &#169; All rights reserved. El Passion</li>
+					<ul class="social-media">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End Footer -->
+
+	<!-- SCRIPTS -->
+	<script src="js/vendor/jquery-3.3.1.min.js"></script>
+	<script src="lightbox2-master/src/js/lightbox.js"></script>
+	<script type="text/javascript" src="js/preloadjq.js"></script>	
+	<script type="text/javascript" src="js/navjq.js"></script>
+	<script type="text/javascript" src="js/showroomjq.js"></script>
+	<script type="text/javascript" src="js/detailsjq.js"></script>
+	<script type="text/javascript" src="js/sliderjq.js"></script>
+	
+	<!-- <script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/showroom.js"></script>
+	<script type="text/javascript" src="js/details.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script> -->
+
+</body>
+
+</html>
