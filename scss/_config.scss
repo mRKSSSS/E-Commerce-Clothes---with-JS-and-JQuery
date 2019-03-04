@@ -1,0 +1,27 @@
+/* Font Families */
+$font1: 'Montserrat', sans-serif;
+$font2: 'Lato', sans-serif;
+$font3: 'Georgia', serif;
+
+/* Font Colors */
+$main-color: #5654e2;
+$dark-color: #413d49;
+$light-color: #ebd8e8;
+$light-color2: #9594bb;
+$light-color3: #a1ade8;
+$white: #FFF;
+
+/* Alt Hero Colors */
+$hero-purple: #341c51;
+$hero-bordeaux: #4C0013;
+
+/* General */
+body {
+    height: 100%;
+}
+html {
+	height: 100%;
+}
+*{
+	box-sizing: border-box;
+}

@@ -1,0 +1,161 @@
+.shopping-cart{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        font-family: $font2;
+        color: $dark-color;
+        .table-row{
+            width: 100%;
+            font-size: 0;
+            border-bottom: 1px solid $main-color;
+            position: relative;
+            &:nth-child(odd){
+                background-color: $light-color3;
+            }
+            .header-cell{
+                text-transform: uppercase;
+            }
+            .fixed-width{
+                display: inline-block;
+                vertical-align: top;
+                width: 120px;
+                font-size: 12px;
+                @include custom-mq(0px, 720px){
+                    width: 100%;
+                    text-align: center;
+                }
+                .cell{
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+            .variable-width{
+                display: inline-block;
+                vertical-align: top;
+                width: calc(100% - 120px);
+                @include custom-mq(0px, 720px){
+                    width: 100%;
+                }
+                .cell{
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding: 10px;
+                    font-size: 12px;
+                    &:first-child{
+                        width: 50.666%;
+                        @include custom-mq(0px, 720px){
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                    &:nth-child(2){
+                        width: 15.666%;
+                    }
+                    &:nth-child(3), &:nth-child(4), &:nth-child(5){
+                        width: 9.666%;
+                    }
+                    &:nth-child(5){
+                        text-align: right;
+                    }
+                    &:last-child{
+                        width: 4.666%;
+                        text-align: center;
+                    }
+                    @include custom-mq(0px, 720px){
+                        &:nth-child(n+2){
+                            width: 25%;
+                            text-align: center;
+                        }
+                        &:last-child{
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+                .row-cell{
+                    height: 120px;
+                    font-size: 14px;
+                    @include custom-mq(0px, 720px){
+                        height: 60px;
+                    }
+                    .center{
+                        position: relative;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    &:nth-child(1){
+                        h2{
+                            text-transform: uppercase;
+                            margin-bottom: 2px;
+                            a{
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+                        span{
+                            font-size: 12px;
+                            color: $light-color2;
+                            font-style: italic;
+                        }
+                    }
+                    &:nth-child(4){
+                        .plus, .minus{
+                            position: absolute;
+                            top: 50%;
+                            left: 25px;
+                            width: 12px;
+                            height: 12px;
+                            background-color: $main-color;
+                            font-size: 7px;
+                            text-align: center;
+                            line-height: 1.8;
+                            cursor: pointer;
+                            @include custom-mq(0px, 720px){
+                                left: 70%;
+                            }
+                            i{
+                                color: $white;
+                            }
+                        }
+                        .plus{
+                            top: -50%;
+                        }
+                    }
+                    &:nth-child(6){
+                        .icon-cross{
+                            cursor: pointer;
+                            transition: all .4s ease;
+                            &:hover{
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .subtotal{
+            width: 100%;
+            background-color: $light-color3;
+            font-size: 14px;
+            font-weight: bold;            
+            text-align: right;
+            padding: 20px 2.5%;
+            margin-top: 5px;
+            p{
+                display: inline;
+                &:first-child{
+                    color: $dark-color;
+                }
+                &:last-child{
+                    color: $main-color;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+}

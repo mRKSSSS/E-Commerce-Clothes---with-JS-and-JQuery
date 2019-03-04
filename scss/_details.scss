@@ -1,0 +1,87 @@
+.details{
+    width: 100%;
+    background-color: $light-color;
+    .center{
+        padding: 65px 20px 85px 20px;
+        max-width: 650px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $font2;
+        h1{
+            font-size: 36px;
+            color: $main-color;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            @include mq(small){
+                font-size: 30px;
+            }
+        }
+        .article-number{
+            font-size: 14px;
+            font-style: italic;
+            color: $light-color2;
+            margin-bottom: 30px;
+        }
+        .price{
+            font-family: $font3;
+            font-size: 18px;
+            color: $dark-color;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        .wot{
+            font-size: 14px;
+            color: $dark-color;
+            margin-bottom: 30px;
+            line-height: 24px;
+        }
+        h2{
+            font-size: 14px;
+            font-weight: bold;
+            color: $main-color;
+            text-transform: uppercase;
+        }
+        .sizes-block{
+            font-size: 0;
+            margin-top: 15px;
+            margin-bottom: 64px;
+            .size{
+                display: inline-block;
+                width: 32px;
+                height: 32px;
+                margin: 6px;
+                font-size: 14px;
+                color: $dark-color;
+                line-height: 2.2;
+                border: 1px solid $dark-color;
+                cursor: pointer;
+                transition: all .4s ease;
+                &:hover{
+                    border: 1px solid $main-color;
+                    color: $main-color;
+                }
+                &.clicked{
+                    border: 1px solid $main-color;
+                    background-color: $main-color;
+                    color: #FFF;
+                }
+            }
+        }
+        a{
+            text-decoration: none;
+            border: 1px solid $main-color;
+            padding: 20px 45px;
+            text-transform: uppercase;
+            background-color: $main-color;
+            color: #FFF;
+            transition: all .4s ease;
+            &:hover{
+                background-color: #FFF;
+                color: $main-color;
+            }
+            @include mq(small){
+                padding: 18px 30px;
+            }
+        }
+    }
+}

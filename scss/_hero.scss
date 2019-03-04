@@ -1,0 +1,111 @@
+.hero{
+    width: 100%;
+    background-color: $light-color;
+    &.slick-slider{
+        margin-bottom: 0;
+    }
+    .slick-dots{
+        bottom: 20px;
+    }
+    .slick-list{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .container{
+        position: relative;
+        // width: 96%;
+        height: 100vh;
+        // margin: 0 auto;
+        // background-image: url("../images/hero.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        .center{
+            font-family: $font1;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            margin: 0 20px;
+            h1{
+                font-size: 70px;
+                color: $main-color;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                /* Responsive h1 */
+                @include mq(large){
+                    font-size: 60px;
+                }
+                @include mq(medium){
+                    font-size: 40px;
+                }
+                @include mq(small){
+                    font-size: 35px;
+                }
+            }
+            p{
+                font-size: 24px;
+                font-style: italic;
+                margin-bottom: 100px;
+                color: $dark-color;
+                /* Responsive p */
+                @include mq(medium){
+                    font-size: 18px;
+                }
+                @include mq(small){
+                    font-size: 16px;
+                }
+            }
+            a{
+                text-decoration: none;
+                font-size: 16px;
+                color: $main-color;
+                text-transform: uppercase;
+                border: 1px solid $main-color;
+                padding: 25px 35px;
+                transition: all .5s ease;
+                &:hover{
+                    background-color: $main-color;;
+                    color: $white;
+                }
+                /* Responsive a */
+                @include mq(medium){
+                    font-size: 14px;
+                    padding: 20px 30px;
+                }
+                @include mq(small){
+                    font-size: 12px;
+                    padding: 20px;
+                }
+            }
+            &.alt1{
+                h1{
+                    color: $hero-purple;
+                    margin-bottom: 60px;
+                }
+                a{
+                    color: $hero-purple;
+                    border: 1px solid $hero-purple;
+                    &:hover{
+                        background-color: $hero-purple;
+                        color: $white;
+                    }
+                }
+            }
+            &.alt2{
+                h1{
+                    color: $hero-bordeaux;
+                    margin-bottom: 60px;
+                }
+                a{
+                    color: $hero-bordeaux;
+                    border: 1px solid $hero-bordeaux;
+                    &:hover{
+                        background-color: $hero-bordeaux;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

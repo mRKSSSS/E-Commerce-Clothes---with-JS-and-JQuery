@@ -1,0 +1,27 @@
+.button{
+    width: 100%;
+    background-color: $light-color;
+    padding: 35px 0;
+    .container{
+        width: 96%;
+        height: 45px;
+        margin: 0 auto;
+        text-align: center;
+        a{
+            display: inline-block;
+            width: 100%;
+            text-decoration: none;
+            font-family: $font2;
+            font-size: 14px;
+            color: $dark-color;
+            text-transform: uppercase;
+            line-height: 3.2;
+            transition: all .4s ease;
+            background-color: $light-color3;
+            &:hover{
+                color: #FFF;
+                background-color: $main-color;
+            }
+        }
+    }
+}

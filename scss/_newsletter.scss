@@ -1,0 +1,76 @@
+.newsletter{
+    width: 100%;
+    background-color: $light-color;
+    .center{
+        padding: 150px 20px;
+        text-align: center;
+        h1{
+            font-family: $font1;
+            font-size: 36px;
+            color: $main-color;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            /* Responsive h1 */
+            @include mq(medium){
+                font-size: 30px;
+            }
+            @include mq(small){
+                font-size: 24px;
+            }
+        }
+        p{
+            font-family: $font1;
+            font-size: 18px;
+            color: $dark-color;
+            margin-bottom: 50px;
+            font-style: italic;
+            /* Responsive p */
+            @include mq(medium){
+                font-size: 15px;
+            }
+            @include mq(small){
+                font-size: 14px;
+            }
+        }
+        form{
+            input{
+                padding: 15px;
+                font-family: $font2;
+                font-size: 14px;
+                &:first-child{
+                    width: 400px;
+                    border: 1px solid $main-color;
+                    /* Responsive form input */
+                    @include mq(large){
+                        width: 50%;
+                    }
+                    @include mq(medium){
+                        width: 60%;
+                    }
+                    @include mq(small){
+                        width: 90%;
+                    }
+                }
+                &:last-child{
+                    width: 90px;
+                    margin-left: -5px;
+                    background-color: $main-color;
+                    color: $white;
+                    border: 1px solid $main-color;
+                    cursor: pointer;
+                    transition: all .4s ease;
+                    &:hover{
+                        background-color: $white;
+                        color: $main-color;
+                    }
+                    /* Responsive form submit */
+                    @include mq(small){
+                        display: block;
+                        margin: 0 auto;
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

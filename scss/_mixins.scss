@@ -1,0 +1,23 @@
+/* MIXINS */
+
+//RESPONSIVE: Mixin with automatic breakpoints
+$breakpoints:(
+	'small': 400px,
+	'medium': 600px,
+	'large': 900px
+);
+
+@mixin mq($breakpoint){
+	@if map-has-key($breakpoints, $breakpoint){
+		@media screen and (max-width: map-get($breakpoints, $breakpoint)){
+			@content;
+		}
+	}
+}
+
+//RESPONSIVE: Mixin for custom/shadow breakpoints (only if necessary)
+@mixin custom-mq($min, $max){
+	@media screen and (min-width: $min) and (max-width: $max){
+		@content;
+	}
+}

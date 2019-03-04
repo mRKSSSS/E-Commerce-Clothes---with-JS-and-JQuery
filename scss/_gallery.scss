@@ -1,0 +1,146 @@
+.gallery{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        font-size: 0;
+        .block{
+            display: inline-block;
+            vertical-align: top;
+            width: 25%;
+            height: 300px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            transition: transform .2s ease;
+            &:hover{
+                transform: scale(1.05);
+                z-index: 1;
+                box-shadow: 0px 0px 6px black;
+            }
+            a{
+                display: block;
+                height: 100%;
+                position: relative;
+                z-index: 1;
+                text-decoration: none;
+            }
+
+            /*Aumentar height do 1º e ultimo filhos
+            para ocupar dois quadrados*/
+            &:first-child{
+                margin-bottom: -300px;
+                height: 600px;
+            }
+            &:last-child{
+                margin-top: -300px;
+                height: 600px;
+            }
+            &.info{
+                background-color: $main-color;
+            }
+            &.tweet{
+                background-color: #00aced;
+            }
+
+            //*********//
+            // Overlay //
+            //*********//
+            &.overlay:before{
+                content: '';
+                display: inline-block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            &:first-child.overlay:before, &:last-child.overlay:before{
+                height: 600px;
+            }
+
+            //************//
+            // Responsive //
+            //************//
+            @include mq(large){
+                width: 50%;
+                &:first-child, &:last-child{
+                    margin-bottom: 0px;
+                    margin-top: 0px;
+                }
+                &:nth-child(2), &:nth-child(11){
+                    height: 600px;
+                }
+                &:nth-child(5), &:nth-child(8){
+                    display: none;
+                }
+            }
+            @include mq(medium){
+                width: 100%;
+                &:nth-child(2), &:nth-child(11){
+                    height: 300px;
+                }
+            }
+
+            .center{
+                font-family: $font2;
+                font-size: 15px;
+                color: $light-color;
+                text-align: center;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 0 20px;
+                h1{
+                    font-size: 24px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+                h2{
+                    font-family: $font3;
+                    font-size: 20px;
+                    font-style: italic;
+                    text-transform: uppercase;
+                }
+                h3{
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                p{
+                    font-family: $font3;
+                    font-size: 14px;
+                    font-style: italic;
+                    margin-bottom: 20px;
+                }
+                i{
+                    display: inline-block;
+                    font-size: 30px;
+                    margin-bottom: 30px;
+                }
+
+                //********************//
+                // Icon Line Elements //
+                //********************//
+                .line-element:before, .line-element:after{
+                    content: '';
+                    display: inline-block;
+                    width: 10%;
+                    height: 1px;
+                    position: absolute;
+                    top: 17px;
+                    background-color: $light-color;
+                }
+                .line-element:before{
+                    left: 30%;
+                }
+                .line-element:after{
+                    right: 30%;
+                }
+
+            }
+            
+        }
+    }
+}

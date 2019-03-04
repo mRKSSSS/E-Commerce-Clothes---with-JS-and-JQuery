@@ -1,0 +1,40 @@
+.shop-cart-buttons{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        padding: 60px 0 80px 0;
+        position: relative;
+        font-family: $font2;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+            color: $dark-color;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all .4s ease;
+            &:first-child{
+                &:hover{
+                    color: $main-color;
+                }
+            }
+            &:last-child{
+                right: 0;
+                padding: 20px 50px;
+                border: 1px solid $main-color;
+                text-transform: uppercase;
+                background-color: $main-color;
+                color: $white;
+                &:hover{
+                    background-color: $white;
+                    color: $main-color;
+                }
+                @include mq(small){
+                    padding: 20px 25px;
+                }
+            }
+        }
+    }
+}

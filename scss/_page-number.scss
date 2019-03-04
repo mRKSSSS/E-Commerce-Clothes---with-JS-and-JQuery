@@ -1,0 +1,31 @@
+.page-number{
+    width: 100%;
+    background-color: $light-color;
+    .pages-block{
+        font-size: 0;
+        font-family: $font1;
+        text-align: center;
+        padding: 10px;
+        .page{
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            font-size: 12px;
+            border: 1px solid $main-color;
+            background-color: $main-color;
+            line-height: 24px;
+            a{
+                display: block;
+                text-decoration: none;
+                color: $white;
+            }
+            &.selected{
+                background-color: $white;
+                a{
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

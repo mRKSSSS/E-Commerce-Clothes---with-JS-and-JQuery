@@ -1,0 +1,74 @@
+.slider{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        height: 120px;
+        margin: 0 auto;
+        font-size: 0;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        ul{
+            li{
+                display: inline-block;
+                width: 14.285%;
+                height: 120px;
+                vertical-align: top;
+                position: relative;
+                overflow: hidden;
+                transition: transform .2s ease;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0px 0px 6px black;
+                    z-index: 1;
+                }
+                a img{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                /* Responsive slider-img*/
+                @include custom-mq(0px, 1300px){
+                    width: 16.666%;;
+                }
+                @include custom-mq(0px, 1100px){
+                    width: 20%;
+                }
+                @include mq(large){
+                    width: 25%;
+                }
+                @include custom-mq(0px, 680px){
+                    width: 33.333%;
+                }
+                @include custom-mq(0px, 468px){
+                    width: 50%;
+                }
+                @include custom-mq(0px, 320px){
+                    width: 100%;
+                }
+            }
+        }
+        .slider-before-button, .slider-after-button{
+            text-decoration: none;
+            cursor: pointer;
+            width: 40px;
+            height: 120px;
+            position: absolute;
+            top: 0;
+            background-color: rgba(0,0,0,0.5);
+            font-size: 30px;
+            text-align: center;
+            line-height: 120px;
+            color: $main-color;
+            z-index: 2;
+        }
+        .slider-before-button{
+            left: 0;
+        }
+        .slider-after-button{
+            right: 0;
+        }   
+    }
+}

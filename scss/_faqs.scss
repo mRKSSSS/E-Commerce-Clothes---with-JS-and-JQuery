@@ -1,0 +1,33 @@
+.faqs{
+    width: 100%;
+    background-color: $light-color;
+    font-family: $font2;
+    font-size: 14px;
+    padding-bottom: 40px;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        ul{
+            max-width: 600px;
+            margin: 0 auto;
+            .question, .answer{
+                padding: 12px;
+            }
+            .question{
+                cursor: pointer;
+                border: 1px solid $light-color2;
+                background-color: $light-color3;
+                text-align: center;
+                transition: all .4s ease;
+                &:hover, &.selected{
+                    border: 1px solid $main-color;
+                    background-color: $main-color;
+                    color: $white;
+                }
+            }
+            .answer{
+                display: none;
+            }
+        }
+    }
+}

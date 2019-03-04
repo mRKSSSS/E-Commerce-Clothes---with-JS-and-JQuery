@@ -1,0 +1,28 @@
+.info-drop{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        padding-bottom: 70px;
+        font-family: $font2;
+        .drop-down-blocks{
+            font-size: 0;
+            max-width: 540px;
+            margin: 0 auto;
+            select{
+                width: 29.333%;
+                font-family: $font3;
+                font-size: 14px;
+                font-style: italic;
+                color: $dark-color;
+                margin: 0 2%;
+                padding: 6px 0;
+                border: none;
+                border-bottom: 1px solid $main-color;
+                background-color: $light-color;
+                cursor: pointer;
+            }
+        }
+    }
+}

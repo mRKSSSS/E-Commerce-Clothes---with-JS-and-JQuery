@@ -1,0 +1,114 @@
+.shopping-cart{
+    width: 100%;
+    height: auto;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        overflow-x: auto;
+        table{
+            width: 100%;
+            font-family: $font2;
+            color: $dark-color;
+            tr{
+                border-bottom: 1px solid $main-color;
+                &:nth-child(odd){
+                    background-color: $light-color3;
+                }
+                th{
+                    text-align: left;
+                    padding: 10px;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                }
+                td{
+                    vertical-align: middle;
+                    padding: 10px;
+                    font-size: 14px;
+                }
+                .prod{
+                    width: 120px;
+                    // background-color: red;
+                }
+                .desc{
+                    min-width: 350px;
+                    // background-color: blue;
+                    h2{
+                        text-transform: uppercase;
+                        margin-bottom: 2px;
+                        a{
+                            text-decoration: none;
+                            color: $main-color;
+                        }
+                    }
+                    span{
+                        font-size: 12px;
+                        color: $light-color2;
+                        font-style: italic;
+                    }
+                }
+                .color{
+                    min-width: 120px;
+                }
+                .size, .qty, .amount{
+                    min-width: 70px;
+                }
+                .qty{
+                    position: relative;
+                    .plus, .minus{
+                        position: absolute;
+                        top: 51%;
+                        left: 35px;
+                        width: 12px;
+                        height: 12px;
+                        background-color: $main-color;
+                        font-size: 7px;
+                        text-align: center;
+                        line-height: 1.8;
+                        cursor: pointer;
+                        i{
+                            color: $white;
+                        }
+                    }
+                    .plus{
+                        top: 39%;
+                    }
+                }
+                .amount{
+                    text-align: right;
+                }
+                .icon{
+                    width: 40px;
+                    .icon-cross{
+                        cursor: pointer;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subtotal{
+        width: 96%;
+        margin: 0 auto;
+        background-color: $light-color3;
+        font-family: $font2;
+        font-size: 14px;
+        font-weight: bold;            
+        text-align: right;
+        padding: 20px 0;
+        margin-top: 5px;
+        
+        p{
+            display: inline;
+            color: $dark-color;
+            
+        }
+        span{
+            color: $main-color;
+            padding: 0 20px;
+            margin-right: 30px;
+        }
+    }
+}

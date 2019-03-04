@@ -1,0 +1,47 @@
+.showroom{
+    width: 100%;
+    height: 85%;;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        .side-div{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 70px;
+            height: auto;
+            a{
+                .side-img{
+                    width: 70px;
+                    height: 70px;
+                    margin-top: 10px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    border: 1px solid $light-color2;
+                    &:after{
+                        content: '';
+                        display: block;
+                        opacity: 0;
+                        width: 70px;
+                        height: 70px;
+                        background-color: rgba(0,0,0,0.5);
+                        transition: all .4s ease;
+                    }
+                    &:hover{
+                        border: none;
+                        &:after{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

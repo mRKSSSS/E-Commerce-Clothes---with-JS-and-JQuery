@@ -1,0 +1,15 @@
+.separator{
+    width: 100%;
+    background-color: $light-color;
+    text-align: center;
+    span{
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        transform: rotate(45deg);
+        border-right: 1px solid $main-color;
+        border-bottom: 1px solid $main-color;
+        text-align: center;
+        margin: 45px 3px 65px 3px;
+    }
+}

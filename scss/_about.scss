@@ -1,0 +1,55 @@
+.about{
+    width: 100%;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        margin: 0 auto;
+        font-size: 0;
+        .about-block{
+            display: inline-block;
+            vertical-align: top;
+            width: 49%;
+            font-family: $font2;
+            margin-bottom: 40px;
+            &:first-child{
+                margin-right: 1%;
+            }
+            &:last-child{
+                margin-left: 1%;
+            }
+            @include mq(medium){
+                width: 100%;
+                &:first-child{
+                    margin-right: 0;
+                }
+                &:last-child{
+                    margin-left: 0;
+                }
+            }
+            .img{
+                height: 320px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-bottom: 40px;
+            }
+            h2{
+                font-size: 24px;
+                color: $main-color;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 20px;
+                @include mq(large){
+                    padding-right: 40px;
+                }
+                @include mq(medium){
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
