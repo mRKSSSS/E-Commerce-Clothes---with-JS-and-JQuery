@@ -1,0 +1,128 @@
+.gallery_old{
+    width: 100%;
+    height: auto;
+    background-color: $light-color;
+    .container{
+        width: 96%;
+        height: 900px;
+        margin: 0 auto;
+        font-size: 0;
+        position: relative;
+        .block{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .abs{
+            position: absolute;
+        }
+        .small{
+            width: 25%;
+            height: 300px;
+        }
+        .medium{
+            width: 25%;
+            height: 600px;
+        }
+        & > * {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        // ************* //
+        // Start Overlay //
+        // ************* //
+        .overlay:before{
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 25%;
+            height: 300px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .medium.overlay:before{
+            height: 600px;
+        }
+        .abs.overlay:before{
+            width: 100%;
+        }
+        // *********** //
+        // End Overlay //
+        // *********** //
+        .tweet{
+            background-color: #00aced;
+        }
+        .info{
+            background-color: $main-color;
+        }
+        .img5{
+            top: 300px;
+            left: 25%;
+        }
+        .img6{
+            top: 300px;
+            left: 50%;
+        }
+        .img10{
+            top: 300px;
+            left: 75%;
+        }
+        & > * > .center{
+            font-family: $font2;
+            font-size: 15px;
+            color: $light-color;
+            text-align: center;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 20px;
+            h1{
+                font-size: 24px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            h2{
+                font-family: $font3;
+                font-size: 20px;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+            h3{
+                font-size: 14px;
+                font-weight: bold;
+            }
+            p{
+                font-family: $font3;
+                font-size: 14px;
+                font-style: italic;
+                margin-bottom: 20px;
+            }
+            i{
+                display: inline-block;
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+            // ************************ //
+            // Start Icon Line Elements //
+            // ************************ //
+            .line-element:before, .line-element:after{
+                content: '';
+                display: inline-block;
+                width: 10%;
+                height: 1px;
+                position: absolute;
+                top: 17px;
+                background-color: $light-color;
+            }
+            .line-element:before{
+                left: 30%;
+            }
+            .line-element:after{
+                right: 30%;
+            }
+            // ********************** //
+            // End Icon Line Elements //
+            // ********************** //
+        }
+    }
+}
